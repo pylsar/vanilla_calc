@@ -11,32 +11,37 @@
       <div class="calc">
         <div class="calc__display">
           <div class="calc__display-prev"></div>
-          <div class="calc__display-current"></div>
+          <div class="calc__display-current">0</div>
         </div>
         <div class="calc__buttons">
-          <div class="calc__row-first">
-            <div class="calc__cancel">C</div>
-            <div class="calc__devide">/</div>
-            <div class="calc__procent">%</div>
-            <div class="calc__plus">+</div>
+          <div class="calc__row">
+            <div class="calc__btn calc__cancel">C</div>
+            <div class="calc__btn calc__devide" onclick="operation = '/'">/</div>
+            <div class="calc__btn calc__plus" onclick="operation = '+'">+</div>
+            <div class="calc__btn calc__back">←</div>
           </div>
-          <div class="calc__row-second">
-            <div class="calc__seven">7</div>
-            <div class="calc__eight">8</div>
-            <div class="calc__nine">9</div>
-            <div class="calc__multiply">x</div>
+          <div class="calc__row">
+            <button class="calc__btn calc__seven">7</button>
+            <div class="calc__btn calc__eight">8</div>
+            <div class="calc__btn calc__nine">9</div>
+            <div class="calc__btn calc__multiply">x</div>
           </div>
-          <div class="calc__row-third">
-            <div class="calv__four">4</div>
-            <div class="calc__five">5</div>
-            <div class="calc__six">6</div>
-            <div class="calc__minus">-</div>
+          <div class="calc__row">
+            <div class="calc__btn calc__four">4</div>
+            <div class="calc__btn calc__five">5</div>
+            <div class="calc__btn calc__six">6</div>
+            <div class="calc__btn calc__minus">-</div>
           </div>
-          <div class="calc__row-fourth">
-            <div class="calc__one">1</div>
-            <div class="calc__two">2</div>
-            <div class="calc__three">3</div>
-            <div class="calc__stepen">x<sup>2</sup></div>
+          <div class="calc__row">
+            <div class="calc__btn calc__one">1</div>
+            <div class="calc__btn calc__two">2</div>
+            <div class="calc__btn calc__three">3</div>
+            <div class="calc__btn calc__stepen">x<sup>2</sup></div>
+          </div>
+          <div class="calc__row">
+            <div class="calc__btn calc__zero">0</div>
+            <div class="calc__btn calc__dot">.</div>
+            <div class="calc__btn calc__equal">=</div>
           </div>
         </div>
       </div>
