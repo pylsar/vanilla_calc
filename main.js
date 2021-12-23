@@ -1,29 +1,28 @@
-import './style.css'
+import "./style.css";
+
+const calcBtnNumbers = document.querySelectorAll(".calc__btn-num");
+const currentDisplay = document.querySelector(".calc__display-current");
+const currentOperand = document.querySelectorAll(".calc__btn-operand");
+let textDisplay = [];
+let prevNum;
+
+calcBtnNumbers.forEach((item) =>
+  item.addEventListener("click", function () {
+    let current = item.getAttribute("value");
+    textDisplay.push(current);
+    // console.log(current);
+    prevNum = textDisplay.toString().split(",").join("");
+    currentDisplay.innerHTML = prevNum;
+  })
+);
+
+currentOperand.forEach((item) =>
+  item.addEventListener("click", function () {
+    let operand = item.getAttribute("value");
+    textDisplay.push(operand);
+    console.log(textDisplay);
+    currentDisplay.innerHTML = prevNum + " " + operand;
+  })
+);
 
 
-const num1 = document.querySelector('.calc__display-current');
-const num2 = document.querySelector('.calc__display-prev');
-const one = document.querySelector('.calc__one');
-const two = document.querySelector('.calc__two');
-
-
-let operation;
-
-function calc(){
-
-    let result;
-    const number1 = Number(num1.value);
-    const number2 = Number(num2.value);
-    console.log(number1)
-
-    switch(operation) {
-        case '/':
-            result = number1 / number2;
-            break;
-        case '+':
-            result = number1 + number2;
-            break;    
-    }
-
-}
-calc();

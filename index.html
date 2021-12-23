@@ -11,37 +11,79 @@
       <div class="calc">
         <div class="calc__display">
           <div class="calc__display-prev"></div>
-          <div class="calc__display-current">0</div>
+          <div class="calc__display-current"></div>
         </div>
         <div class="calc__buttons">
           <div class="calc__row">
-            <div class="calc__btn calc__cancel">C</div>
-            <div class="calc__btn calc__devide" onclick="operation = '/'">/</div>
-            <div class="calc__btn calc__plus" onclick="operation = '+'">+</div>
-            <div class="calc__btn calc__back">←</div>
+            <button value="C" class="calc__btn calc__btn-operand calc__cancel">
+              C
+            </button>
+            <button value="/" class="calc__btn calc__btn-operand calc__devide">
+              /
+            </button>
+            <button value="+" class="calc__btn calc__btn-operand calc__plus">
+              +
+            </button>
+            <button value="←" class="calc__btn calc__btn-operand calc__back">
+              ←
+            </button>
           </div>
           <div class="calc__row">
-            <button class="calc__btn calc__seven">7</button>
-            <div class="calc__btn calc__eight">8</div>
-            <div class="calc__btn calc__nine">9</div>
-            <div class="calc__btn calc__multiply">x</div>
+            <button value="7" class="calc__btn calc__btn-num calc__seven">
+              7
+            </button>
+            <button value="8" class="calc__btn calc__btn-num calc__eight">
+              8
+            </button>
+            <button value="9" class="calc__btn calc__btn-num calc__nine">
+              9
+            </button>
+            <button
+              value="x"
+              class="calc__btn calc__btn-operand calc__multiply"
+            >
+              x
+            </button>
           </div>
           <div class="calc__row">
-            <div class="calc__btn calc__four">4</div>
-            <div class="calc__btn calc__five">5</div>
-            <div class="calc__btn calc__six">6</div>
-            <div class="calc__btn calc__minus">-</div>
+            <button value="4" class="calc__btn calc__btn-num calc__four">
+              4
+            </button>
+            <button value="5" class="calc__btn calc__btn-num calc__five">
+              5
+            </button>
+            <button value="6" class="calc__btn calc__btn-num calc__six">
+              6
+            </button>
+            <button value="-" class="calc__btn calc__btn-operand calc__minus">
+              -
+            </button>
           </div>
           <div class="calc__row">
-            <div class="calc__btn calc__one">1</div>
-            <div class="calc__btn calc__two">2</div>
-            <div class="calc__btn calc__three">3</div>
-            <div class="calc__btn calc__stepen">x<sup>2</sup></div>
+            <button value="1" class="calc__btn calc__btn-num calc__one">
+              1
+            </button>
+            <button value="2" class="calc__btn calc__btn-num calc__two">
+              2
+            </button>
+            <button value="3" class="calc__btn calc__btn-num calc__three">
+              3
+            </button>
+            <button
+              value="sup"
+              class="calc__btn calc__btn-operand calc__stepen"
+            >
+              x<sup>2</sup>
+            </button>
           </div>
           <div class="calc__row">
-            <div class="calc__btn calc__zero">0</div>
-            <div class="calc__btn calc__dot">.</div>
-            <div class="calc__btn calc__equal">=</div>
+            <button value="0" class="calc__btn calc__btn-num calc__zero">
+              0
+            </button>
+            <button value="." class="calc__btn calc__dot">.</button>
+            <button value="=" class="calc__btn calc__btn-equal calc__equal">
+              =
+            </button>
           </div>
         </div>
       </div>
